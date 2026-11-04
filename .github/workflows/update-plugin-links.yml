@@ -1,0 +1,58 @@
+name: Update plugin download links
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'Plugins/**/*.zip'
+      - 'README.md'
+      - 'tools/update_readme.py'
+      - 'tools/test_update_readme.py'
+      - '.github/workflows/update-plugin-links.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-plugin-links-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: main
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - name: Check updater
+        run: python -m unittest discover -s tools -p test_update_readme.py
+      - name: Update and commit README
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3; do
+            python tools/update_readme.py
+            if git diff --quiet -- README.md; then
+              echo 'README already up to date.'
+              exit 0
+            fi
+            git add -- README.md
+            git commit -m 'Update plugin download links and badges'
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            # Another upload may have landed during this run. Retry from the
+            # newest main in this disposable Actions checkout.
+            git fetch origin main
+            git reset --hard FETCH_HEAD
+          done
+          echo 'Could not commit README. Check workflow permissions or branch rules.' >&2
+          exit 1
