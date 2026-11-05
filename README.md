@@ -7,8 +7,8 @@
 Community plugins for [Nari](https://narimusic.com): listening stats, a cleaner queue, and your music sources one tap away.
 
 <!-- plugin-badges:start -->
-[![Listening Wrapped 1.4.1](https://img.shields.io/badge/Listening_Wrapped-1.4.1-ed4963?style=for-the-badge)](https://github.com/Pirate2122yt/Nari-Extras/tree/main/Plugins/Listening-Wrapped)
-[![Queue Tools 1.0.3](https://img.shields.io/badge/Queue_Tools-1.0.3-4cba7b?style=for-the-badge)](https://github.com/Pirate2122yt/Nari-Extras/tree/main/Plugins/Queue-Tools)
+[![Listening Wrapped 1.4.2](https://img.shields.io/badge/Listening_Wrapped-1.4.2-ed4963?style=for-the-badge)](https://github.com/Pirate2122yt/Nari-Extras/tree/main/Plugins/Listening-Wrapped)
+[![Queue Tools 1.0.4](https://img.shields.io/badge/Queue_Tools-1.0.4-4cba7b?style=for-the-badge)](https://github.com/Pirate2122yt/Nari-Extras/tree/main/Plugins/Queue-Tools)
 [![Source Switcher 1.2.3](https://img.shields.io/badge/Source_Switcher-1.2.3-009ff3?style=for-the-badge)](https://github.com/Pirate2122yt/Nari-Extras/tree/main/Plugins/Source-Switcher)
 <!-- plugin-badges:end -->
 
@@ -25,8 +25,8 @@ Community plugins for [Nari](https://narimusic.com): listening stats, a cleaner 
 <!-- plugin-downloads:start -->
 | Plugin | What it does | Download |
 | :--- | :--- | :---: |
-| 🔴 **[Listening Wrapped](https://github.com/Pirate2122yt/Nari-Extras/tree/main/Plugins/Listening-Wrapped)** | Your month or year in music, with top songs, artists, albums, and listening time. | [**v1.4.1 · ZIP**](https://github.com/Pirate2122yt/Nari-Extras/raw/refs/heads/main/Plugins/Listening-Wrapped/listening-wrapped-1.4.1.zip) |
-| 🟢 **[Queue Tools](https://github.com/Pirate2122yt/Nari-Extras/tree/main/Plugins/Queue-Tools)** | Remove duplicates, shuffle upcoming songs, and choose how many songs each artist gets. | [**v1.0.3 · ZIP**](https://github.com/Pirate2122yt/Nari-Extras/raw/refs/heads/main/Plugins/Queue-Tools/queue-tools-1.0.3.zip) |
+| 🔴 **[Listening Wrapped](https://github.com/Pirate2122yt/Nari-Extras/tree/main/Plugins/Listening-Wrapped)** | Your month or year in music, with top songs, artists, albums, and listening time. | [**v1.4.2 · ZIP**](https://github.com/Pirate2122yt/Nari-Extras/raw/refs/heads/main/Plugins/Listening-Wrapped/listening-wrapped-1.4.2.zip) |
+| 🟢 **[Queue Tools](https://github.com/Pirate2122yt/Nari-Extras/tree/main/Plugins/Queue-Tools)** | Remove duplicates, shuffle upcoming songs, and choose how many songs each artist gets. | [**v1.0.4 · ZIP**](https://github.com/Pirate2122yt/Nari-Extras/raw/refs/heads/main/Plugins/Queue-Tools/queue-tools-1.0.4.zip) |
 | 🔵 **[Quick Source Switcher](https://github.com/Pirate2122yt/Nari-Extras/tree/main/Plugins/Source-Switcher)** | Choose your music sources and switch between them with a corner button. | [**v1.2.3 · ZIP**](https://github.com/Pirate2122yt/Nari-Extras/raw/refs/heads/main/Plugins/Source-Switcher/source-switcher-1.2.3.zip) |
 <!-- plugin-downloads:end -->
 The download links above point directly to the installable ZIPs. Each linked plugin folder also contains its available versions.
